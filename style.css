@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face{
+	font-family:"Gabriola";
+	font-style:normal;
+	font-weight:400;
+	font-display:block;
+	src:url(font/gabriola.woff) format("woff"),url(font/gabriola.ttf) format("truetype");
+}
+
+html, body {
+	/*font-family: 'Quicksand', sans-serif;*/
+	font-family: 'Poppins', sans-serif;
+	background: #444;
+}
+
+header {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 70;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	letter-spacing: 1px;
+	font-size: 1.1em;
+	z-index: 50;
+}
+header ul li {
+	display: inline-block;
+	margin: 10px 0;
+	padding: 0 1.1em 1.1em;
+}
+header a {
+	/*color: #262626;*/
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+}
+header a:hover, header li.active a {
+	/*color: #e2e2e2;
+	border-bottom: 2px solid #e2e2e2;*/
+	color: #fff;
+	border-bottom: 2px solid #fff;
+	text-decoration: none;
+}
+
+div.section.yellow {
+	background: #f6c681;
+	color: #fff;
+}
+div.section.blue {
+	background: #179cc0;
+	color: #fff;
+}
+div.section.grey {
+	background: #444;
+}
+
+.container img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.background-image {
+	background-color: rgb(106, 115, 218);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.background-image::before {
+	opacity: 0.38;
+	background: #000000;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 1;
+	display: inline-block;
+	content: " ";
+}
+.background-image .content, .background-image .head, .background-image .bottom {
+	position: relative;
+	z-index: 50;
+}
+
+div.section div.head {
+	/*width: 80%;*/
+	display: block;
+	margin: 0 auto;
+	position: absolute; !important;
+	top: 10vh;
+	left: 0;
+	right: 0;
+}
+div.section div.bottom {
+	/*width: 80%;*/
+	display: block;
+	margin: 0 auto;
+	position: absolute; !important;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+}
+
+.dot {
+	height: 100px;
+	width: 100px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+	background: #fff;
+}
+
+/* Page accueil */
+
+div.home_section {
+	background-image: url('images/julien.jpg');
+	color: #fff;
+}
+div.home_section div.bottom {
+	bottom: 8vh;
+}
+div.home_section h1 {
+	font-family: Gabriola, serif;
+	font-size: 100px;
+	margin-top: 10vh;
+	margin-bottom: 5vh;
+}
+div.home_section h2 {
+	font-size: 60px;
+}
+div.home_section h3 {
+	font-size: 40px;
+}
+
+
+/* Page menu */
+
+div.menu_section {
+	background-image: url('images/chalet.jpg');
+	text-align: center;
+	font-family: Gabriola, serif;
+	font-size: 30px;
+}
+div.menu_section h2 {
+	font-size: 50px;
+}
+div.menu_section p {
+	line-height: 1.2;
+}
+
+
+/* Page prestation */
+
+div.prestation_section {
+	background-image: url('images/chalet2.jpg');
+	text-align: justify;
+	/*font-family: Gabriola, serif;*/
+	font-size: 24px;
+}
+div.prestation_section .card-body {
+	padding: 30px 40px;
+}
+div.prestation_section p {
+	margin-bottom: 30px;
+}
+div.alert {
+	font-size: 20px;
+}
+
+/* Page contact */
+
+div.contact_section {
+	background-image: url('images/chalet.jpg');
+	color: #fff;
+}
+div.contact_section h2 {
+	font-size: 40px;
+	margin-bottom: 5vh;
+}
+div.contact_section .card-body {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 26px;
+	color: #444;
+}
+div.contact_section .dot {
+	width: 160px;
+	height: 160px;
+	background: cadetblue;
+	padding-top: 14px;
+}
+div.contact_section .icon {
+	margin-bottom: 30px;
+}
+div.contact_section .contact_info {
+	font-size: 30px;
+}
+
+/* First page (old) */
+
+.div_of_4_square .row .col-6:first-child {
+	padding-right: 0;
+}
+.div_of_4_square .row .col-6:last-child {
+	padding-left: 0;
+	border-left: 7px solid #fff;
+}
+
+.main_presentation {
+	padding: 10px 20px;
+	font-size: 36px;
+}
+.main_presentation h1, .main_presentation h2 {
+	font-family: Gabriola, serif;
+	color: #222;
+}
+.main_presentation h1 {
+	font-size: 70px;
+	margin-top: 70px;
+}
+.main_presentation h2 {
+	font-size: 50px;
+	margin-bottom: 70px;
+}
+.divider {
+	height: 7px;
+	background: #fff;
+}
+
+/* Second page */
+

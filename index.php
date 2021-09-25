@@ -33,6 +33,7 @@
 	<header>
 		<ul id="menu">
 			<li data-menuanchor="home"><a href="#home">Accueil</a></li>
+			<li data-menuanchor="presentation"><a href="#presentation">Présentation</a></li>
 			<li data-menuanchor="prestations"><a href="#prestations">Prestations</a></li>
 			<li data-menuanchor="exemples-menu"><a href="#exemples-menu">Exemples de menu</a></li>
 			<li data-menuanchor="contact"><a href="#contact">Contact</a></li>
@@ -53,15 +54,41 @@
 			</div>
 		</div>
 
-		<div class="section prestation_section background-image">
-			<div class="container">
+		<div class="section presentation_section background-image">
+			<div class="container-fluid">
 				<div class="content">
 					<div class="row">
-						<div class="col-2"></div>
-						<div class="col-8">
-
+						<?php /* <div class="col-4"></div> */ ?>
+						<div class="col-1"></div>
+						<div class="col-4">
 							<div class="card">
-								<div class="card-body">
+								<div class="card-body text">
+									<p>
+										Dès mon plus jeune âge, je choisis l’école Grégoire Ferrandi Paris en alternance dans l’idée d’évoluer dans la gastronomie de l’excellence. Grâce à mon engouement et ma rigueur, je deviens Meilleurs Apprenti de France.
+									</p>
+									<p>
+										Dès la sortie de l’école, j’intègre la brigade du Mandarin Oriental auprès de Thierry Marx. Puis ma curiosité me mène à Londres au Greenhouse (2 étoiles Michelin), aux États-Unis, ou encore au Japon au restaurant Kichisen (3 étoiles Michelin). Ces expériences marquent aujourd’hui un tournant dans ma vie et mes inspirations culinaires.
+									</p>
+									<p>
+										De retour en France, je les mets en exergue en tant que sous-chef en Relais & Château au Jiva Hill et au Domaine des Hauts de Loire (2 étoiles Michelin).
+										Ces expériences renforcent ma passion pour le produit, la culture du détail et me permet de m’essayer à de nombreux concours tels que le Prosper Montagné (3ème place), la Sélection des Bocuse d’Or,...
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section prestation_section background-image">
+			<div class="container-fluid">
+				<div class="content">
+					<div class="row">
+						<div class="col-7"></div>
+						<div class="col-4">
+							<div class="card">
+								<div class="card-body text">
 									<p>
 										Je vous propose mes services pour vos <strong>séjours de vacances</strong> à la semaine (demi-pension ou pension complète) mais aussi pour des <strong>repas entre amis</strong>, <strong>en famille</strong>...
 									</p>
@@ -69,11 +96,11 @@
 										Je propose des formules <strong>sur mesure</strong> pour m’adapter au mieux à vos envies : menu gastronomique en 3, 4 ou 6 temps, menu bistronomique ou une cuisine simple et variée pour tous les jours. Je propose également des cocktails dinatoires, brunchs, barbecue, buffet...
 									</p>
 									<p>
-										Je fonctionne avec un forfait « chef privée ». Le prix varie selon le nombre de personnes, en plus de ce prix il faut rajouter le forfait « matière première » qui varie selon le menu ou le type de repas que vous aurez choisi.
+										Je fonctionne avec un forfait « chef privé ». Le prix varie selon le nombre de personnes, en plus de ce prix il faut rajouter le forfait « matière première » qui varie selon le menu ou le type de repas que vous aurez choisi.
 									</p>
 									<div class="alert alert-info text-center mb-0">
 										<div>Forfait chef privé :</div>
-										<div>A partir de 250 €</div>
+										<div>À partir de 250 €</div>
 										<div>Me contacter pour établir un tarif précis selon vos désirs.</div>
 									</div>
 								</div>
@@ -85,34 +112,35 @@
 		</div>
 
 		<div class="section menu_section background-image">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="content">
 					<div class="row">
+						<div class="col-md-1"></div>
 						<div class="col-md-4">
-							<div class="card">
+							<div class="card menu mb-3">
 								<div class="card-body">
 									<h2>Gastronomique <!--en 4 temps--></h2>
 									<p>Amuse bouche</p>
-									<p>Foie gras confit au cacao, poires</p>
-									<p>St jacques</p>
-									<p>Pigeon rôti aux gomasio, tatin de navet, jus corsé</p>
-									<p>Entremet pignon de pin aux myrtilles</p>
+									<p>Foie gras confit au cacao, Poivre Timur, et Poires légèrement brulées</p>
+<!--									<p>St jacques</p>-->
+									<p>Homard bleu à peine fumé, Nage au thé Matcha, Pamplemousse et Fenouil braisés</p>
+									<p>Pigeon rôti aux Gomasio, la Cuisse confite, Tatin de Navet aux Dattes, Jus corsé</p>
+									<p>Entremet pignon de pin aux Myrtilles</p>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-8">
-							<div class="card">
+
+							<div class="card menu">
 								<div class="card-body">
 									<h2>Bistronomique</h2>
 									<p>
-										Velouté de chataigne, chantilly chartreuse et magret fumé
+										Velouté de Châtaigne, Chantilly Chartreuse et Magret fumé
 										<br>Ou<br>
-										Truite de Savoie en gravelax à la betterave, crème legere au wasabi
+										Truite de Savoie en gravelax à la betterave, Crème légère au Wasabi
 									</p>
 									<p>
-										Suprême de volaille des Dombes rôti sur le coffre, grémolata au citron, écrasé de pomme de terre et sauce poulette
+										Suprême de volaille des Dombes rôti sur le coffre, Grémolata au citron, Écrasé de Pommes de terre et Sauce poulette
 										<br>Ou<br>
-										Dos de cabillaud en croute de noisette, crozet comme un risotto, écume marinière
+										Dos de Cabillaud en croûte de Noisette, Crozet comme un risotto, Écume marinière
 									</p>
 									<p>
 										Pomme de Savoie façon tatin
@@ -122,6 +150,44 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-md-3"></div>
+						<div class="col-md-3">
+							<div class="card menu mb-3">
+								<div class="card-body">
+									<h2>Cocktail dinatoire</h2>
+									<p>Velouté de Potimarron, Éclats de marron</p>
+									<p>Feuille à feuille de Saumon fumé</p>
+									<p>Terrine de Foie gras, Chutney de coing</p>
+									<p>Mini club sandwich au poulet</p>
+									<p>Croustillant d’agneau aux oignons confit et épices</p>
+									<p>Mini éclair</p>
+									<p>Mini tartelette aux poires</p>
+								</div>
+							</div>
+							<div class="card menu">
+								<div class="card-body">
+									<h2>Menu simple et varié sur la semaine</h2>
+									<p>Velouté de butterut, œuf mollet</p>
+									<p>Filet de truite snacké, choux fleur en deux textures
+									<br>Ou<br>
+									Poitrine de veau en blanquette, méli-mélo de légumes</p>
+									<p>Pomme de Savoie façon tatin</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-1"></div>
+
+						<div class="clearfix"></div>
+						<div class="col-12">&nbsp;</div>
+
+						<div class="col-md-1"></div>
+						<div class="col-md-4">
+						</div>
+						<div class="col-md-2"></div>
+						<div class="col-md-4">
+						</div>
+						<div class="col-md-1"></div>
+
 					</div>
 				</div>
 			</div>

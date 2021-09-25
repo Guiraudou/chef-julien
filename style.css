@@ -1,7 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');*/
 
+/*
 @font-face{
 	font-family:"Gabriola";
 	font-style:normal;
@@ -9,10 +10,11 @@
 	font-display:block;
 	src:url(font/gabriola.woff) format("woff"),url(font/gabriola.ttf) format("truetype");
 }
+*/
 
 html, body {
-	/*font-family: 'Quicksand', sans-serif;*/
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Quicksand', sans-serif;
+	/*font-family: 'Poppins', sans-serif;*/
 	background: #444;
 }
 
@@ -20,7 +22,7 @@ header {
 	position: fixed;
 	top: 20px;
 	right: 20px;
-	z-index: 70;
+	/*z-index: 70;*/
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	letter-spacing: 1px;
@@ -105,6 +107,18 @@ div.section div.bottom {
 	right: 0;
 }
 
+.card-body.text {
+	padding: 30px 30px;
+	text-align: justify;
+	font-size: 20px;
+}
+.card-body.text p {
+	margin-bottom: 30px;
+}
+.card-body.text p:last-child {
+	margin-bottom: 0;
+}
+
 .dot {
 	height: 100px;
 	width: 100px;
@@ -140,44 +154,68 @@ div.home_section h3 {
 }
 
 
-/* Page menu */
+/* Page présentation */
 
-div.menu_section {
-	background-image: url('images/chalet.jpg');
-	text-align: center;
-	font-family: Gabriola, serif;
-	font-size: 30px;
+div.presentation_section {
+	background-image: url('images/plat1.jpg');
 }
-div.menu_section h2 {
-	font-size: 50px;
-}
-div.menu_section p {
-	line-height: 1.2;
-}
-
 
 /* Page prestation */
 
 div.prestation_section {
-	background-image: url('images/chalet2.jpg');
-	text-align: justify;
+	background-image: url('images/chalet3.jpg');
 	/*font-family: Gabriola, serif;*/
-	font-size: 24px;
-}
-div.prestation_section .card-body {
-	padding: 30px 40px;
-}
-div.prestation_section p {
-	margin-bottom: 30px;
 }
 div.alert {
 	font-size: 20px;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 }
+
+/* Page menu */
+
+div.menu_section {
+	background-image: url('images/plat4.jpg');
+}
+
+div.menu_section .col-md-1 {
+	flex: 0 0 3.333333%;
+	max-width: 3.333333%;
+}
+div.menu_section .col-md-1 {
+	flex: 0 0 3.333333%;
+	max-width: 3.333333%;
+}
+div.menu_section .col-md-4 {
+	flex: 0 0 38.333333%;
+	max-width: 38.333333%;
+}
+
+div.menu {
+	font-family: Gabriola, serif;
+	font-size: 24px;
+	text-align: center;
+}
+div.menu .card-body {
+	padding: 10px 10px;
+}
+div.menu h2 {
+	font-size: 40px;
+	margin-top: 0;
+}
+div.menu p {
+	line-height: 1.1;
+}
+div.menu p:last-child {
+	margin-bottom: 0;
+}
+
+
 
 /* Page contact */
 
 div.contact_section {
-	background-image: url('images/chalet.jpg');
+	background-image: url('images/chalet1.jpg');
 	color: #fff;
 }
 div.contact_section h2 {
@@ -233,6 +271,3 @@ div.contact_section .contact_info {
 	height: 7px;
 	background: #fff;
 }
-
-/* Second page */
-

@@ -8,7 +8,7 @@ $(function() {
 		autoScrolling:true,
 		//scrollHorizontally: true
 
-		anchors: ['home', 'prestations', 'exemples-menu', 'contact'],
+		anchors: ['home', 'presentation', 'prestations', 'exemples-menu', 'contact'],
 		menu: '#menu',
 		navigation: true,
 		navigationPosition: 'right',

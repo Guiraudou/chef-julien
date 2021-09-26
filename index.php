@@ -1,4 +1,4 @@
-<?php ini_set('default_charset', "utf-8"); ?>
+<?php ini_set('default_charset', "utf-8"); define('ACCESS_TOKEN', strtotime('2021-09-06 16:29:00')); ?>
 <!DOCTYPE html>
 <html lang="fr-FR">
 <head>
@@ -24,20 +24,57 @@
 
 	<!-- style -->
 
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link href="fullpage.js.3.1.2/fullpage.min.css" rel="stylesheet">
 
-	<link href="style.css" rel="stylesheet">
+	<link href="style.css?<?php echo ACCESS_TOKEN; ?>" rel="stylesheet">
 </head>
 <body>
 	<header>
-		<ul id="menu">
-			<li data-menuanchor="home"><a href="#home">Accueil</a></li>
-			<li data-menuanchor="presentation"><a href="#presentation">Présentation</a></li>
-			<li data-menuanchor="prestations"><a href="#prestations">Prestations</a></li>
-			<li data-menuanchor="exemples-menu"><a href="#exemples-menu">Exemples de menu</a></li>
-			<li data-menuanchor="contact"><a href="#contact">Contact</a></li>
-		</ul>
+		<nav class="navbar navbar-expand-md navbar-light">
+			<a class="navbar-brand" href="#"></a>
+			<button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse bg-black" id="navbarSupportedContent">
+				<ul id="menu">
+					<li class="nav-item" data-menuanchor="home"><a href="#home">Accueil</a></li>
+					<li class="nav-item" data-menuanchor="presentation"><a href="#presentation">Présentation</a></li>
+					<li class="nav-item" data-menuanchor="prestations"><a href="#prestations">Prestations</a></li>
+					<li class="nav-item" data-menuanchor="exemples-menu"><a href="#exemples-menu">Exemples de menu</a></li>
+					<li class="nav-item" data-menuanchor="contact"><a href="#contact">Contact</a></li>
+				</ul>
+				<?php /*
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+				*/ ?>
+			</div>
+		</nav>
 	</header>
 	<div id="fullpage">
 		<div class="section home_section background-image">
@@ -59,10 +96,10 @@
 				<div class="content">
 					<div class="row">
 						<?php /* <div class="col-4"></div> */ ?>
-						<div class="col-1"></div>
-						<div class="col-4">
-							<div class="card">
-								<div class="card-body text">
+						<div class="col-12 col-lg-12 col-xl-1"></div>
+						<div class="col-12 col-lg-6 col-xl-4">
+							<div class="card text text_white">
+								<div class="card-body">
 									<p>
 										Dès mon plus jeune âge, je choisis l’école Grégoire Ferrandi Paris en alternance dans l’idée d’évoluer dans la gastronomie de l’excellence. Grâce à mon engouement et ma rigueur, je deviens Meilleurs Apprenti de France.
 									</p>
@@ -85,10 +122,10 @@
 			<div class="container-fluid">
 				<div class="content">
 					<div class="row">
-						<div class="col-7"></div>
-						<div class="col-4">
-							<div class="card">
-								<div class="card-body text">
+						<div class="col-12 col-lg-5 col-xl-6"></div>
+						<div class="col-12 col-lg-6 col-xl-4">
+							<div class="card text text_white">
+								<div class="card-body">
 									<p>
 										Je vous propose mes services pour vos <strong>séjours de vacances</strong> à la semaine (demi-pension ou pension complète) mais aussi pour des <strong>repas entre amis</strong>, <strong>en famille</strong>...
 									</p>
@@ -115,8 +152,7 @@
 			<div class="container-fluid">
 				<div class="content">
 					<div class="row">
-						<div class="col-md-1"></div>
-						<div class="col-md-4">
+						<div class="col-12 col-sm-6 col-xl-4 offset-xl-1">
 							<div class="card menu mb-3">
 								<div class="card-body">
 									<h2>Gastronomique <!--en 4 temps--></h2>
@@ -150,8 +186,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-3"></div>
-						<div class="col-md-3">
+						<div class="col-12 col-sm-6 col-xl-3 offset-xl-3 d-none d-sm-block">
 							<div class="card menu mb-3">
 								<div class="card-body">
 									<h2>Cocktail dinatoire</h2>
@@ -166,7 +201,7 @@
 							</div>
 							<div class="card menu">
 								<div class="card-body">
-									<h2>Menu simple et varié sur la semaine</h2>
+									<h2>Menu <!--simple et--> varié sur la semaine</h2>
 									<p>Velouté de butterut, œuf mollet</p>
 									<p>Filet de truite snacké, choux fleur en deux textures
 									<br>Ou<br>
@@ -175,9 +210,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-1"></div>
+						<div class="col-12 col-sm-12 col-xl-1"></div>
 
-						<div class="clearfix"></div>
+						<!--<div class="clearfix"></div>
 						<div class="col-12">&nbsp;</div>
 
 						<div class="col-md-1"></div>
@@ -186,7 +221,7 @@
 						<div class="col-md-2"></div>
 						<div class="col-md-4">
 						</div>
-						<div class="col-md-1"></div>
+						<div class="col-md-1"></div>-->
 
 					</div>
 				</div>
@@ -235,15 +270,15 @@
 				</div>-->
 			<div class="container">
 				<div class="content text-center">
-					<div class="card">
+					<div class="card text_white">
 						<div class="card-body">
 							N'hésitez pas à me contacter pour obtenir plus de précisions ou pour un devis précis selons votre besoin.
 						</div>
 					</div>
 					<br>
 					<div class="row">
-						<div class="col-md-6">
-							<div class="card">
+						<div class="col-md-6 mb-2">
+							<div class="card text_white">
 								<div class="card-body">
 									<div class="dot2 icon">
 										<img src="images/phone.png" alt="">
@@ -255,7 +290,7 @@
 							</div>
 						</div>
 						<div class="col-md-6">
-							<div class="card">
+							<div class="card text_white">
 								<div class="card-body">
 									<div class="dot2 icon">
 										<img src="images/email.png" alt="">
@@ -280,6 +315,7 @@
 	</script>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 	<script src="fullpage.js.3.1.2/fullpage.min.js"></script>
 
 	<script src="app.js"></script>

@@ -352,8 +352,8 @@ div.contact_section h2 {
 	margin-bottom: 5vh;
 }
 div.contact_section .card-body {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	font-size: 26px;
 	/*color: #444;*/
 }
@@ -363,11 +363,18 @@ div.contact_section .dot {
 	background: cadetblue;
 	padding-top: 14px;
 }
-div.contact_section .icon {
+div.contact_section .contact_item {
+	font-size: 30px;
+}
+div.contact_section .contact_item .card-body {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+div.contact_section .contact_item img {
 	margin-bottom: 30px;
 }
-div.contact_section .contact_info {
-	font-size: 30px;
+div.contact_section .contact_item a, div.contact_section .contact_item a:hover {
+	color: #fff;
 }
 @media (max-width: 576px) {
 	div.contact_section .card-body {
@@ -375,14 +382,12 @@ div.contact_section .contact_info {
 		padding-bottom: 10px;
 		font-size: 16px;
 	}
-	div.contact_section .contact_info {
+	div.contact_section .contact_item {
 		font-size: 18px;
 	}
-	div.contact_section .icon {
-		margin-bottom: 10px;
-	}
-	div.contact_section .icon img {
+	div.contact_section .contact_item img {
 		max-height: 48px;
+		margin-bottom: 10px;
 	}
 }
 

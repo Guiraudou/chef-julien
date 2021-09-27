@@ -1,4 +1,4 @@
-<?php ini_set('default_charset', "utf-8"); define('ACCESS_TOKEN', strtotime('2021-09-27 09:45:00')); ?>
+<?php ini_set('default_charset', "utf-8"); define('ACCESS_TOKEN', strtotime('2021-09-27 10:11:00')); ?>
 <!DOCTYPE html>
 <html lang="fr-FR">
 <head>
@@ -38,6 +38,7 @@
 			</button>
 
 			<div class="collapse navbar-collapse bg-black" id="navbarSupportedContent">
+				<!--<ul class="navbar-nav mr-auto">-->
 				<ul id="menu">
 					<li class="nav-item" data-menuanchor="home"><a href="#home">Accueil</a></li>
 					<li class="nav-item" data-menuanchor="presentation"><a href="#presentation">Présentation</a></li>
@@ -45,34 +46,6 @@
 					<li class="nav-item" data-menuanchor="exemples-menu"><a href="#exemples-menu">Exemples de menu</a></li>
 					<li class="nav-item" data-menuanchor="contact"><a href="#contact">Contact</a></li>
 				</ul>
-				<?php /*
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Dropdown
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="#">Disabled</a>
-					</li>
-				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				</form>
-				*/ ?>
 			</div>
 		</nav>
 	</header>
@@ -158,7 +131,7 @@
 									<h2>Gastronomique <!--en 4 temps--></h2>
 									<p>Amuse bouche</p>
 									<p>Foie gras confit au cacao, Poivre Timur, et Poires légèrement brulées</p>
-<!--									<p>St jacques</p>-->
+									<!--<p>St jacques</p>-->
 									<p>Homard bleu à peine fumé, Nage au thé Matcha, Pamplemousse et Fenouil braisés</p>
 									<p>Pigeon rôti aux Gomasio, la Cuisse confite, Tatin de Navet aux Dattes, Jus corsé</p>
 									<p>Entremet pignon de pin aux Myrtilles</p>
@@ -261,7 +234,6 @@
 		</div>
 		-->
 
-<!--		<div class="section contact_section grey">-->
 		<div class="section contact_section background-image">
 				<!--<div class="head">
 					<div class="container">
@@ -272,31 +244,30 @@
 				<div class="content text-center">
 					<div class="card text_white">
 						<div class="card-body">
-							N'hésitez pas à me contacter pour obtenir plus de précisions ou pour un devis précis selons votre besoin.
+							<p>N'hésitez pas à me contacter pour obtenir plus de précisions ou pour un devis précis selons votre besoin.</p>
+							<div class="text-right">
+								<a href="plaquette_julien.pdf" title="">Télécharger ma plaquette</a>
+							</div>
 						</div>
 					</div>
 					<br>
 					<div class="row">
 						<div class="col-md-6 mb-2">
-							<div class="card text_white">
+							<div class="card text_white contact_item">
 								<div class="card-body">
-									<div class="dot2 icon">
-										<img src="images/phone.png" alt="">
-									</div>
-									<div class="contact_info">
-										06 17 57 52 45
+									<img src="images/phone.png" alt="">
+									<div>
+										<a href="tel:+33617575245">06 17 57 52 45</a>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-6">
-							<div class="card text_white">
+							<div class="card text_white contact_item">
 								<div class="card-body">
-									<div class="dot2 icon">
-										<img src="images/email.png" alt="">
-									</div>
-									<div class="contact_info">
-										julien.guiraudou@gmail.com
+									<img src="images/email.png" alt="">
+									<div>
+										<a href="mailto:julien.guiraudou@gmail.com">julien.guiraudou@gmail.com</a>
 									</div>
 								</div>
 							</div>

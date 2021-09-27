@@ -386,6 +386,14 @@ div.contact_section .contact_info {
 	}
 }
 
+/* Impression / export PDF */
+
+@media print {
+	#fp-nav {
+		display: none;
+	}
+}
+
 /* First page (old) */
 
 .div_of_4_square .row .col-6:first-child {

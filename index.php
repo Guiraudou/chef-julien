@@ -26,6 +26,8 @@
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link href="fullpage.js.3.1.2/fullpage.min.css" rel="stylesheet">
+	<!--<link href="magnific-popup/magnific-popup.css" rel="stylesheet">-->
+	<link href="fancybox/fancybox.css" rel="stylesheet">
 
 	<link href="style.css?<?php echo ACCESS_TOKEN; ?>" rel="stylesheet">
 </head>
@@ -44,6 +46,7 @@
 					<li class="nav-item" data-menuanchor="presentation"><a href="#presentation">Présentation</a></li>
 					<li class="nav-item" data-menuanchor="prestations"><a href="#prestations">Prestations</a></li>
 					<li class="nav-item" data-menuanchor="exemples-menu"><a href="#exemples-menu">Exemples de menu</a></li>
+					<li class="nav-item" data-menuanchor="galerie"><a href="#galerie">Galerie</a></li>
 					<li class="nav-item" data-menuanchor="contact"><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
@@ -127,60 +130,19 @@
 					<div class="row">
 						<div class="col-12 col-sm-6 col-xl-4 offset-xl-1">
 							<div class="card menu mb-3">
-								<div class="card-body">
-									<h2>Gastronomique <!--en 4 temps--></h2>
-									<p>Amuse bouche</p>
-									<p>Foie gras confit au cacao, Poivre Timur, et Poires légèrement brulées</p>
-									<!--<p>St jacques</p>-->
-									<p>Homard bleu à peine fumé, Nage au thé Matcha, Pamplemousse et Fenouil braisés</p>
-									<p>Pigeon rôti aux Gomasio, la Cuisse confite, Tatin de Navet aux Dattes, Jus corsé</p>
-									<p>Entremet pignon de pin aux Myrtilles</p>
-								</div>
+								<div class="card-body menu_1"></div>
 							</div>
 
 							<div class="card menu">
-								<div class="card-body">
-									<h2>Bistronomique</h2>
-									<p>
-										Velouté de Châtaigne, Chantilly Chartreuse et Magret fumé
-										<br>Ou<br>
-										Truite de Savoie en gravelax à la betterave, Crème légère au Wasabi
-									</p>
-									<p>
-										Suprême de volaille des Dombes rôti sur le coffre, Grémolata au citron, Écrasé de Pommes de terre et Sauce poulette
-										<br>Ou<br>
-										Dos de Cabillaud en croûte de Noisette, Crozet comme un risotto, Écume marinière
-									</p>
-									<p>
-										Pomme de Savoie façon tatin
-										<br>Ou<br>
-										Paris-Brest
-									</p>
-								</div>
+								<div class="card-body menu_2"></div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-xl-3 offset-xl-3 d-none d-sm-block">
 							<div class="card menu mb-3">
-								<div class="card-body">
-									<h2>Cocktail dinatoire</h2>
-									<p>Velouté de Potimarron, Éclats de marron</p>
-									<p>Feuille à feuille de Saumon fumé</p>
-									<p>Terrine de Foie gras, Chutney de coing</p>
-									<p>Mini club sandwich au poulet</p>
-									<p>Croustillant d’agneau aux oignons confit et épices</p>
-									<p>Mini éclair</p>
-									<p>Mini tartelette aux poires</p>
-								</div>
+								<div class="card-body menu_3"></div>
 							</div>
 							<div class="card menu">
-								<div class="card-body">
-									<h2>Menu <!--simple et--> varié sur la semaine</h2>
-									<p>Velouté de butterut, œuf mollet</p>
-									<p>Filet de truite snacké, choux fleur en deux textures
-									<br>Ou<br>
-									Poitrine de veau en blanquette, méli-mélo de légumes</p>
-									<p>Pomme de Savoie façon tatin</p>
-								</div>
+								<div class="card-body menu_4"></div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-12 col-xl-1"></div>
@@ -233,6 +195,14 @@
 			</div>
 		</div>
 		-->
+
+		<div class="section galerie_section background-image">
+			<div class="container-fluid">
+				<div class="content">
+					<div class="row photos"></div>
+				</div>
+			</div>
+		</div>
 
 		<div class="section contact_section background-image">
 				<!--<div class="head">
@@ -288,6 +258,8 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 	<script src="fullpage.js.3.1.2/fullpage.min.js"></script>
+	<!--<script src="magnific-popup/jquery.magnific-popup.min.js"></script>-->
+	<script src="fancybox/fancybox.umd.js"></script>
 
 	<script src="app.js"></script>
 

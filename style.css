@@ -277,7 +277,8 @@ div.home_section h3 {
 /* Page présentation */
 
 div.presentation_section {
-	background-image: url('images/plat1.jpg');
+	/*background-image: url('images/plat1.jpg');*/
+	background-image: url('images/julien2.jpg');
 }
 
 /* Page prestation */
@@ -300,7 +301,8 @@ div.prestation_section .alert {
 /* Page menu */
 
 div.menu_section {
-	background-image: url('images/plat4.jpg');
+	/*background-image: url('images/plat4.jpg');*/
+	background-image: url('images/jardin.jpg');
 }
 
 /*
@@ -339,6 +341,26 @@ div.menu_section {
 	div.menu_section .offset-xl-3 {
 		margin-left: 20%;
 	}
+}
+
+/* Page galerie */
+
+div.galerie_section {
+	background-image: url('images/plat5.jpg');
+	color: #fff;
+}
+
+div.galerie_section div.photos {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+div.galerie_section div.photos div.photo {
+	text-align: center;
+	margin-bottom: 2em;
+}
+div.galerie_section div.photos div.photo img {
+	/*max-height: 15em;*/
+	max-width: 100%;
 }
 
 /* Page contact */

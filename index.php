@@ -1,4 +1,4 @@
-<?php ini_set('default_charset', "utf-8"); define('ACCESS_TOKEN', strtotime('2021-09-27 10:11:00')); ?>
+<?php ini_set('default_charset', "utf-8"); define('ACCESS_TOKEN', strtotime('2022-04-20 17:15:00')); ?>
 <!DOCTYPE html>
 <html lang="fr-FR">
 <head>
@@ -30,6 +30,16 @@
 	<link href="fancybox/fancybox.css" rel="stylesheet">
 
 	<link href="style.css?<?php echo ACCESS_TOKEN; ?>" rel="stylesheet">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-D6RQNF6PDS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-D6RQNF6PDS');
+	</script>
 </head>
 <body>
 	<header>

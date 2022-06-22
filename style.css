@@ -451,3 +451,6 @@ div.contact_section .contact_item a, div.contact_section .contact_item a:hover {
 	height: 7px;
 	background: #fff;
 }
+.hide {
+	display: none;
+}

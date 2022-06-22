@@ -1,4 +1,4 @@
-<?php ini_set('default_charset', "utf-8"); define('ACCESS_TOKEN', strtotime('2022-04-20 17:15:00')); ?>
+<?php ini_set('default_charset', "utf-8"); define('ACCESS_TOKEN', strtotime('2022-06-22 18:13:00')); ?>
 <!DOCTYPE html>
 <html lang="fr-FR">
 <head>
@@ -87,7 +87,7 @@
 							<div class="card text text_white">
 								<div class="card-body">
 									<p>
-										Dès mon plus jeune âge, je choisis l’école Grégoire Ferrandi Paris en alternance dans l’idée d’évoluer dans la gastronomie de l’excellence. Grâce à mon engouement et ma rigueur, je deviens Meilleurs Apprenti de France.
+										Dès mon plus jeune âge, je choisis l’école Grégoire Ferrandi Paris en alternance dans l’idée d’évoluer dans la gastronomie de l’excellence. Grâce à mon engouement et ma rigueur, je deviens Meilleurs Apprentis de France.
 									</p>
 									<p>
 										Dès la sortie de l’école, j’intègre la brigade du Mandarin Oriental auprès de Thierry Marx. Puis ma curiosité me mène à Londres au Greenhouse (2 étoiles Michelin), aux États-Unis, ou encore au Japon au restaurant Kichisen (3 étoiles Michelin). Ces expériences marquent aujourd’hui un tournant dans ma vie et mes inspirations culinaires.
@@ -151,7 +151,7 @@
 							<div class="card menu mb-3">
 								<div class="card-body menu_3"></div>
 							</div>
-							<div class="card menu">
+							<div class="card menu hide">
 								<div class="card-body menu_4"></div>
 							</div>
 						</div>

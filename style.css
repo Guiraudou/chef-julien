@@ -2,12 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 /*@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');*/
 
-@font-face{
+/*@font-face{
 	font-family:"Gabriola";
 	font-style:normal;
 	font-weight:400;
 	font-display:block;
 	src:url(font/gabriola.woff) format("woff"),url(font/gabriola.ttf) format("truetype");
+}*/
+
+@font-face{
+	font-family:"Gabriela";
+	font-style:normal;
+	font-weight:400;
+	font-display:block;
+	src:url(font/Gabriela-Regular.ttf) format("truetype");
 }
 
 html, body {
@@ -186,8 +194,8 @@ div.section div.bottom {
 }
 
 .card.menu {
-	font-family: Gabriola, serif;
-	font-size: 24px;
+	font-family: Gabriela, serif;
+	font-size: 20px;
 	text-align: center;
 	background: url('images/menu_bg.jpg') repeat;
 	color: #242424;
@@ -250,8 +258,8 @@ div.home_section div.bottom {
 	}
 }
 div.home_section h1 {
-	font-family: Gabriola, serif;
-	font-size: 100px;
+	font-family: Gabriela, serif;
+	font-size: 80px;
 	margin-top: 10vh;
 	margin-bottom: 5vh;
 }
@@ -284,8 +292,8 @@ div.presentation_section {
 /* Page prestation */
 
 div.prestation_section {
-	background-image: url('images/chalet4.jpg');
-	/*font-family: Gabriola, serif;*/
+	background-image: url('images/table1.jpg');
+	/*font-family: Gabriela, serif;*/
 }
 div.prestation_section .alert {
 	font-size: 20px;
@@ -346,7 +354,7 @@ div.menu_section {
 /* Page galerie */
 
 div.galerie_section {
-	background-image: url('images/plat5.jpg');
+	background-image: url('images/sapin.jpg');
 	color: #fff;
 }
 
@@ -436,7 +444,7 @@ div.contact_section .contact_item a, div.contact_section .contact_item a:hover {
 	font-size: 36px;
 }
 .main_presentation h1, .main_presentation h2 {
-	font-family: Gabriola, serif;
+	font-family: Gabriela, serif;
 	color: #222;
 }
 .main_presentation h1 {

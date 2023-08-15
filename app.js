@@ -1,5 +1,5 @@
 $(function() {
-	let nbPhotos = 8;
+	let nbPhotos = 12;
 
 	// https://alvarotrigo.com/fullPage/#page1
 	// https://github.com/alvarotrigo/fullPage.js#usage
@@ -43,11 +43,13 @@ $(function() {
 		.then(response => response.text())
 		.then(html => {
 			let menuDiv = $('.menu_section');
-			let menuList = $(html).find('div');
+			let menuList = $(html).find('div:not(.hidden)');
 			console.log(menuList);
 
 			for (let i = 0; i < menuList.length; i++) {
-				menuDiv.find('.menu_'+(i+1)).html($(menuList[i]).html());
+				if (typeof menuList[i] != 'undefined') {
+					menuDiv.find('.menu_'+(i+1)).html($(menuList[i]).html());
+				}
 			}
 		})
 	;

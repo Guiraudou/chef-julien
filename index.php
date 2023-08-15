@@ -138,7 +138,21 @@
 			<div class="container-fluid">
 				<div class="content">
 					<div class="row">
+						<!-- VERSION 4 MENUS -->
 						<div class="col-12 col-sm-6 col-xl-4 offset-xl-1">
+							<div class="card menu">
+								<div class="card-body menu_1"></div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-xl-3 offset-xl-3 d-none d-sm-block">
+							<div class="card menu">
+								<div class="card-body menu_2"></div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-xl-1"></div>
+						
+						<!-- VERSION 4 MENUS -->
+						<!-- <div class="col-12 col-sm-6 col-xl-4 offset-xl-1">
 							<div class="card menu mb-3">
 								<div class="card-body menu_1"></div>
 							</div>
@@ -155,7 +169,7 @@
 								<div class="card-body menu_4"></div>
 							</div>
 						</div>
-						<div class="col-12 col-sm-12 col-xl-1"></div>
+						<div class="col-12 col-sm-12 col-xl-1"></div> -->
 
 						<!--<div class="clearfix"></div>
 						<div class="col-12">&nbsp;</div>
@@ -225,9 +239,9 @@
 					<div class="card text_white">
 						<div class="card-body">
 							<p>N'hésitez pas à me contacter pour obtenir plus de précisions ou pour un devis précis selons votre besoin.</p>
-							<div class="text-right">
+							<!--<div class="text-right">
 								<a href="plaquette_julien.pdf" title="">Télécharger ma plaquette</a>
-							</div>
+							</div>-->
 						</div>
 					</div>
 					<br>

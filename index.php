@@ -285,7 +285,7 @@
 	<!--<script src="magnific-popup/jquery.magnific-popup.min.js"></script>-->
 	<script src="fancybox/fancybox.umd.js"></script>
 
-	<script src="app.js"></script>
+	<script src="app.js?<?php echo ACCESS_TOKEN; ?>"></script>
 
 </body>
 </html>

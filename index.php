@@ -138,8 +138,8 @@
 			<div class="container-fluid">
 				<div class="content">
 					<div class="row">
-						<!-- VERSION 4 MENUS -->
-						<div class="col-12 col-sm-6 col-xl-4 offset-xl-1">
+						<!-- VERSION 2 MENUS -->
+						<!-- <div class="col-12 col-sm-6 col-xl-4 offset-xl-1">
 							<div class="card menu">
 								<div class="card-body menu_1"></div>
 							</div>
@@ -147,6 +147,24 @@
 						<div class="col-12 col-sm-6 col-xl-3 offset-xl-3 d-none d-sm-block">
 							<div class="card menu">
 								<div class="card-body menu_2"></div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-xl-1"></div> -->
+						
+						<!-- VERSION 3 MENUS -->
+						<div class="col-12 col-sm-4 col-xl-3 offset-xl-1">
+							<div class="card menu">
+								<div class="card-body menu_1"></div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-4 col-xl-3 d-none d-sm-block">
+							<div class="card menu">
+								<div class="card-body menu_2"></div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-4 col-xl-3 d-none d-sm-block">
+							<div class="card menu">
+								<div class="card-body menu_3"></div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-12 col-xl-1"></div>
@@ -285,7 +303,7 @@
 	<!--<script src="magnific-popup/jquery.magnific-popup.min.js"></script>-->
 	<script src="fancybox/fancybox.umd.js"></script>
 
-	<script src="app.js?<?php echo ACCESS_TOKEN; ?>"></script>
+	<script src="app.js"></script>
 
 </body>
 </html>

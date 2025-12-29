@@ -3,36 +3,29 @@ $(function() {
 
 	// https://alvarotrigo.com/fullPage/#page1
 	// https://github.com/alvarotrigo/fullPage.js#usage
-	var fullPage = $('#fullpage').fullpage({
-		//options here
-		autoScrolling:true,
-		//scrollHorizontally: true
 
-		anchors: ['home', 'presentation', 'prestations', 'exemples-menu', 'galerie', 'contact'],
+	new fullpage('#fullpage', {
+		licenseKey: 'gplv3-license',
+		anchors: [
+			'home',
+			'presentation',
+			'prestations',
+			'exemples-menu',
+			'galerie',
+			'contact'
+		],
 		menu: '#menu',
-		navigation: true,
-		navigationPosition: 'right',
-		controlArrows: true,
-		showActiveTooltip: true,
-		/*slidesNavigation: true,*/
+		scrollingSpeed: 700,
+		autoScrolling: true,
+		fitToSection: true,
+		scrollBar: false,
+		keyboardScrolling: true,
+		responsiveWidth: 768,
 
-		/*
-		afterRender: function() {
-			//updateHeaderMenu();
-		},
-		afterLoad: function(origin, destination, direction) {
-			//var leavingSection = this;
-
-			//console.log(destination.item);
-			//updateHeaderMenu();
-		},
-		onLeave: function(origin, destination, direction) {
-			//var leavingSection = this;
-
-			//console.log(destination.item);
-			//updateHeaderMenu();
-		},
-		*/
+		//navigation: true,
+		//navigationPosition: 'right',
+		//controlArrows: true,
+		//showActiveTooltip: true,
 	});
 
 	//let menuList = JSON.parse('menu.json');
@@ -64,6 +57,28 @@ $(function() {
 	Fancybox.bind("[data-fancybox]", {
 		// Your options go here
 	});
+
+	function formatPhoneFR(phone) {
+		phone = phone.replace(/\D/g, '');   // garde uniquement les chiffres
+		phone = phone.replace(/^33/, '0');   // remplace l’indicatif FR
+		return phone.match(/.{1,2}/g).join(' ');
+	}
+	document.querySelectorAll('.phone-number').forEach(function (el) {
+		el.textContent = formatPhoneFR(el.textContent);
+	});
+
+	/*
+	document.querySelectorAll('#navbarSupportedContent .nav-link').forEach(function (link) {
+		link.addEventListener('click', function () {
+			var collapseEl = document.getElementById('navbarSupportedContent');
+			if (collapseEl && collapseEl.classList.contains('show')) {
+				var bsCollapse = bootstrap.Collapse.getInstance(collapseEl) || new bootstrap.Collapse(collapseEl, { toggle: false });
+				bsCollapse.hide();
+			}
+		});
+	});
+
+	 */
 
 	/*
 	galerieDiv.magnificPopup({

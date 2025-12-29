@@ -42,14 +42,12 @@ header {
 		padding: 0;
 	}
 /*}*/
-header ul {
+header ul.navbar-nav {
 	margin: 0;
 }
-header ul li {
+header ul.navbar-nav li.nav-item {
 	display: inline-block;
-	margin: 10px 0;
-	/*padding: 0 1.1em 1.1em;*/
-	padding: 0 1.1em;
+	padding: 0 0.5em;
 }
 header .collapsing { /* désactive l'animation */
 	-webkit-transition: none;
@@ -57,28 +55,28 @@ header .collapsing { /* désactive l'animation */
 	display: none;
 }
 @media (max-width: 768px) {
-	header .navbar-collapse.collapse.show.bg-black {
+	header .navbar-collapse.collapse.show {
 		background: #181818;
 	}
-	header .navbar-collapse.collapse.show ul li {
+	header .navbar-collapse.collapse.show ul.navbar-nav li.nav-item {
 		display: block;
 	}
 }
 @media (max-width: 892px) {
-	header ul {
+	header ul.navbar-nav {
 		margin: 1rem 0;
 	}
-	header ul li {
+	header ul.navbar-nav li.nav-item {
 		padding: 0 6px;
 	}
 }
-header a {
+header a.nav-link {
 	/*color: #262626;*/
 	color: #fff;
 	font-weight: bold;
 	font-size: 20px;
 }
-header a:hover, header li.active a {
+header a.nav-link:hover, header li.active a.nav-link {
 	/*color: #e2e2e2;
 	border-bottom: 2px solid #e2e2e2;*/
 	color: #fff;
@@ -145,24 +143,6 @@ div.section div.bottom {
 	bottom: 20px;
 	left: 0;
 	right: 0;
-}
-
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-	background: #fff;
-}
-@media (max-width: 992px) {
-	#fp-nav {
-		top: unset;
-		bottom: 0;
-	}
-}
-@media (max-width: 576px) {
-	#fp-nav {
-		transform: unset;
-		-ms-transform: unset;
-		-webkit-transform: unset;
-		bottom: 5px;
-	}
 }
 
 /* Textes */
@@ -421,10 +401,43 @@ div.contact_section .contact_item a, div.contact_section .contact_item a:hover {
 	}
 }
 
+.fp-watermark {
+	display: none;
+}
+
+.instagram-fixed {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 9999;
+
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: rgba(0, 0, 0, 0.75);
+	color: #fff;
+
+	font-size: 24px;
+	text-decoration: none;
+
+	transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.instagram-fixed:hover {
+	transform: scale(1.1);
+	opacity: 0.8;
+	color: #fff;
+}
+
 /* Impression / export PDF */
 
 @media print {
-	#fp-nav {
+	.navbar {
 		display: none;
 	}
 }
